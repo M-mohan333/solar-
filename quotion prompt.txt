@@ -1,0 +1,155 @@
+Title:
+Project Proposal – Rooftop Solar Made Simple and Affordable
+
+Client Name:
+Mr. MOHAN RAJ
+
+Company Name:
+ETech solution
+
+Tagline (Footer):
+“You are part of a mission in reducing carbon footprint in the world”
+
+📑 SECTION 1: PROJECT SUMMARY
+
+Project Type: Rooftop Solar
+Capacity: 3.4 KW
+Project Location: cuddalore
+
+📊 SECTION 2: PRICING DETAILS
+Particulars	Details
+Capacity	3.4 KW
+Total Cost	₹2,20,000
+Subsidy Amount	₹78,000
+Net Investment	₹1,42,000
+ROI	27%
+Payback Period	3.5 Years
+Lifetime Power Savings (25 Years)	₹9,92,800
+⚙️ SECTION 3: PROJECT DETAILS & CALCULATIONS
+
+Units generated per year:
+3.4 × 4 × 365 = 4,964 Units / Year
+
+Cost saved per year:
+8 × 4,964 = ₹39,712 / Year
+
+Lifetime savings (25 years):
+25 × 39,712 = ₹9,92,800
+
+Payback period calculation:
+(Total Cost – Subsidy) / Yearly Savings
+1,42,000 / 39,712 ≈ 3.5 Years
+
+🌱 SECTION 4: ENVIRONMENTAL IMPACT
+
+CO₂ emission saved:
+4,672 × 0.7 × 25 = 81,760 Kgs (≈ 81 Tonnes)
+
+One tonne of CO₂ equals 46 trees per year
+
+This home offsets pollution equal to 3,726 trees in its lifetime
+
+🧾 SECTION 5: BILL OF MATERIALS
+
+580W Solar Module – Bifacial DCR (Waaree Energies)
+
+Solar Inverter – Polycab (4 KW, 1 Phase)
+
+ACDB & DCDB – SolarRun Approved Brands
+
+Galvanized Iron Structure
+
+Cables – Orbit / Polycab
+
+Earthing Rods
+
+Lightning Arrestors
+
+MC4 Connectors
+
+Transportation Included
+
+🛡️ SECTION 6: WARRANTY DETAILS
+Component	Warranty
+Solar Panel Performance	30 Years
+Solar Panel Replacement	12 Years
+On-Grid Inverter	7 Years
+Balance of System	3 Years
+Government Subsidy	₹78,000
+💳 SECTION 7: PAYMENT TERMS
+
+70% – During material delivery
+
+20% – After solar installation
+
+10% – Upon receiving net meter
+
+🔧 SECTION 8: TECHNICAL SPECIFICATIONS
+
+Panels:
+Waaree Energy – High efficiency bifacial panels
+
+Structures:
+
+Hot-dip galvanized steel
+
+Wind resistance up to 175 km/h
+
+Coating thickness: 80 μm
+
+Standard: BS EN ISO 1461
+
+Nuts & Bolts:
+SS304 stainless steel with spring & plate washers
+
+Cables:
+
+DC Cable: Polycab – 6 Sqmm
+
+AC Cable: Orbit – 6 Sqmm
+
+Earthing Cable: Orbit – 6 Sqmm
+
+Lightning Arrestor Cable: Orbit – 16 Sqmm
+
+Earthing System:
+2-meter copper rods with chemical earthing
+Lightning arrestor – Excel Earthings
+
+MC4 Connectors:
+IP67 rated, waterproof, shock-proof
+
+🏆 SECTION 9: WHY CHOOSE Etec solution?
+
+5 Years of FREE Maintenance
+
+Free Government Subsidy Paperwork Assistance
+
+Flexible Financing & No-Cost EMI
+
+Certified Installation Experts
+
+Save over 90% on electricity bills
+
+🏢 SECTION 10: ABOUT ETech solution
+
+ETech solution is a leading provider of sustainable energy solutions, committed to making renewable energy accessible, reliable, and affordable for every home.
+
+Mission:
+To equip 10,000 homes with solar energy by 2030.
+
+📌 FINAL OUTPUT REQUIREMENT
+
+Output must be 100% editable Word document
+
+Clean headings, tables, spacing
+
+No images required
+
+Professional proposal-ready layout
+
+📎 Reference
+
+All data and structure are taken from the uploaded SolarRun proposal PDF 
+
+Mr_Selvaraj_3.4KW (1)

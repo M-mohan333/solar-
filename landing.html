@@ -1,0 +1,1769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Energy Landing Page - Wireframe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f8f9fa;
+            color: #2d3748;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6, .logo {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .wireframe-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #f6ad55 0%, #ed8936 50%, #dd6b20 100%);
+            color: white;
+            padding: 1rem;
+            box-shadow: 0 4px 12px rgba(237, 137, 54, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        /* Pain Point Banner */
+        .pain-point-banner {
+            background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+            padding: 1rem 1.5rem;
+            border-bottom: 3px solid #fbbf24;
+        }
+
+        .pain-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .pain-icon {
+            font-size: 2rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .pain-text {
+            color: #78350f;
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+
+        /* Meme + Banner layout */
+        .pain-image {
+            width: 360px;
+            flex: 0 0 360px;
+        }
+
+        .pain-body {
+            flex: 1 1 auto;
+            text-align: center;
+            padding-left: 0;
+        }
+
+        .pain-cta {
+            margin-top: 0.75rem;
+        }
+
+        .pain-cta .primary-btn {
+            padding: 0.6rem 1rem;
+            font-size: 0.95rem;
+            border-radius: 8px;
+        }
+
+        .pain-text strong {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #92400e;
+        }
+
+        .highlight {
+            background: #fde68a;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #78350f;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        .cta-btn {
+            background: #48bb78;
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s;
+            box-shadow: 0 2px 8px rgba(72, 187, 120, 0.3);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            background: #38a169;
+            box-shadow: 0 4px 12px rgba(72, 187, 120, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #edf2f7 0%, #e6fffa 100%);
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #2d3748;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .hero .tamil {
+            color: #38a169;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #4a5568;
+            margin-bottom: 2rem;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .primary-btn {
+            background: #f6ad55;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .primary-btn:hover {
+            background: #ed8936;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(246, 173, 85, 0.4);
+        }
+
+        .secondary-btn {
+            background: white;
+            color: #38a169;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border: 2px solid #38a169;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .secondary-btn:hover {
+            background: #38a169;
+            color: white;
+        }
+
+        .trust-badges {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: #4a5568;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: 3rem 1.5rem;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #38a169;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .benefit-card {
+            background: #f7fafc;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-4px);
+            border-color: #48bb78;
+            box-shadow: 0 8px 16px rgba(72, 187, 120, 0.15);
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-card h3 {
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .benefit-card p {
+            color: #4a5568;
+            font-size: 0.95rem;
+        }
+
+        /* Calculator Section */
+        .calculator {
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            padding: 3rem 1.5rem;
+            color: white;
+        }
+
+        .calculator-content {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        .calculator h2 {
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border-radius: 6px;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .result-box {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+
+        .result-box h3 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .result-box p {
+            font-size: 0.9rem;
+        }
+
+        /* Process Section */
+        .process {
+            padding: 3rem 1.5rem;
+            background: #f7fafc;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            max-width: 1000px;
+            margin: 2rem auto 0;
+        }
+
+        .step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: #48bb78;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 1rem;
+        }
+
+        .step h3 {
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+
+        .step p {
+            color: #4a5568;
+            font-size: 0.9rem;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 3rem 1.5rem;
+            background: white;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 3rem 1.5rem;
+            background: #f7fafc;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 2rem auto 0;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 4px 12px rgba(72, 187, 120, 0.15);
+        }
+
+        .faq-question {
+            padding: 1.25rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            color: #2d3748;
+            user-select: none;
+            transition: all 0.3s;
+        }
+
+        .faq-question:hover {
+            background: #f7fafc;
+            color: #38a169;
+        }
+
+        .faq-icon {
+            font-size: 1.5rem;
+            color: #48bb78;
+            font-weight: bold;
+            transition: transform 0.3s;
+            min-width: 30px;
+            text-align: center;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+            padding: 0 1.5rem;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 0 1.5rem 1.25rem 1.5rem;
+        }
+
+        .faq-answer p {
+            color: #4a5568;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 2rem auto 0;
+        }
+
+        .testimonial-card {
+            background: #f7fafc;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 4px solid #48bb78;
+        }
+
+        .testimonial-text {
+            color: #4a5568;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .testimonial-location {
+            font-size: 0.9rem;
+            color: #718096;
+        }
+
+        /* CTA Section */
+        .final-cta {
+            background: linear-gradient(135deg, #f6ad55 0%, #ed8936 100%);
+            padding: 3rem 1.5rem;
+            text-align: center;
+            color: white;
+        }
+
+        .final-cta h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .final-cta p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-options {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-btn {
+            background: white;
+            color: #ed8936;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        /* Footer */
+        .footer {
+            background: #2d3748;
+            color: white;
+            padding: 2rem 1.5rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: left;
+        }
+
+        .footer h4 {
+            margin-bottom: 1rem;
+            color: #48bb78;
+        }
+
+        .footer a {
+            color: #cbd5e0;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer a:hover {
+            color: white;
+        }
+
+        /* Popup Modal */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            animation: fadeIn 0.3s;
+        }
+
+        .modal-overlay.show {
+            display: flex;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            max-width: 500px;
+            width: 100%;
+            position: relative;
+            animation: slideUp 0.3s;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: #f7fafc;
+            border: none;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            color: #4a5568;
+        }
+
+        .modal-close:hover {
+            background: #e2e8f0;
+            transform: rotate(90deg);
+        }
+
+        .modal-header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .modal-header h3 {
+            color: #2d3748;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-header p {
+            color: #4a5568;
+            font-size: 0.95rem;
+        }
+
+        .modal-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .modal-input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .modal-input-group label {
+            font-weight: 600;
+            color: #2d3748;
+            font-size: 0.9rem;
+        }
+
+        .modal-input-group input {
+            padding: 0.9rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .modal-input-group input:focus {
+            outline: none;
+            border-color: #48bb78;
+            box-shadow: 0 0 0 3px rgba(72, 187, 120, 0.1);
+        }
+
+        .modal-input-group input.error {
+            border-color: #f56565;
+            animation: shake 0.3s;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+
+        .error-message {
+            color: #f56565;
+            font-size: 0.85rem;
+            margin-top: 0.25rem;
+            display: none;
+        }
+
+        .error-message.show {
+            display: block;
+        }
+
+        .modal-submit-btn {
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 0.5rem;
+        }
+
+        .modal-submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(72, 187, 120, 0.4);
+        }
+
+        .modal-privacy {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #718096;
+            margin-top: 1rem;
+        }
+
+        /* Success Popup Modal */
+        .success-modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            animation: fadeIn 0.3s;
+        }
+
+        .success-modal-overlay.show {
+            display: flex;
+        }
+
+        .success-modal-content {
+            background: linear-gradient(135deg, #ffffff 0%, #f0fff4 100%);
+            border-radius: 20px;
+            padding: 2.5rem;
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            animation: bounceIn 0.6s;
+            box-shadow: 0 25px 70px rgba(72, 187, 120, 0.3);
+            border: 3px solid #48bb78;
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .success-icon-container {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: checkmarkPop 0.8s ease-in-out 0.3s;
+            box-shadow: 0 10px 30px rgba(72, 187, 120, 0.4);
+        }
+
+        @keyframes checkmarkPop {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        .success-icon-container::before {
+            content: '✓';
+            font-size: 3.5rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        .success-modal-content h2 {
+            color: #2d3748;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            font-weight: 800;
+        }
+
+        .success-modal-content .tamil-text {
+            color: #38a169;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .success-details {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+            border: 2px solid #c6f6d5;
+        }
+
+        .success-detail-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin: 0.8rem 0;
+            font-size: 1rem;
+            color: #2d3748;
+        }
+
+        .success-detail-item .icon {
+            font-size: 1.3rem;
+        }
+
+        .success-detail-item strong {
+            color: #38a169;
+            font-weight: 700;
+        }
+
+        .success-message {
+            color: #4a5568;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 1rem 0;
+        }
+
+        .success-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .whatsapp-btn {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        }
+
+        .close-success-btn {
+            background: #e2e8f0;
+            color: #4a5568;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .close-success-btn:hover {
+            background: #cbd5e0;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .benefits-grid,
+            .process-steps,
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pain-content {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .pain-icon {
+                font-size: 1.5rem;
+            }
+
+            .pain-text {
+                font-size: 0.9rem;
+            }
+
+            .modi-section {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .modi-image img {
+                height: 250px;
+            }
+
+            .modi-section {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .modi-image img {
+                height: 250px;
+            }
+
+            .subsidy-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .subsidy-info-banner {
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            padding: 2rem;
+            border-radius: 16px;
+            margin-bottom: 3rem;
+            box-shadow: 0 8px 30px rgba(72, 187, 120, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .subsidy-info-banner::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -5%;
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        .info-banner-content {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .info-icon {
+            font-size: 4rem;
+            background: rgba(255, 255, 255, 0.2);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-text h3 {
+            color: white;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            font-weight: 800;
+        }
+
+        .info-text p {
+            color: rgba(255, 255, 255, 0.95);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+                    .info-banner-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .info-icon {
+                width: 80px;
+                height: 80px;
+                font-size: 3rem;
+            }
+
+            .info-text h3 {
+                font-size: 1.4rem;
+            }
+
+            .info-text p {
+                font-size: 0.9rem;
+            }
+
+            .subsidy-info-banner::before {
+                width: 200px;
+                height: 200px;
+            }
+
+            .subsidy-benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .subsidy-card.featured {
+                transform: scale(1);
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .subsidy-cta h3 {
+                font-size: 1.3rem;
+            }
+        }
+
+        .annotation {
+            background: #fef3c7;
+            border-left: 4px solid #f6ad55;
+            padding: 1rem;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+            color: #744210;
+        }
+    </style>
+</head>
+<body>
+    <div class="wireframe-container">
+        <!-- Header/Navigation -->
+        <header class="header">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="etec.png" alt="ETECH logo">
+
+                    ETECH SOLUTIONS
+                </div>
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#calculator">Calculator</a>
+                    <a href="#process">Process</a>
+                    <a href="#testimonials">Reviews</a>
+                    <a href="tel:+916380759287" class="cta-btn">📞 Call Now</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Pain Point Banner -->
+        <section class="pain-point-banner">
+            <div class="pain-content">
+                <div class="pain-body">
+                    <div class="pain-text">
+                        <strong>கரண்ட் பில் ரொம்ப அதிகமா வருதா?</strong>
+                        <div>என்றொரு மாதம் வந்த பில் பார்த்து இதுபோலவே அதிர்ச்சியில் இருக்கிறீர்களா? நாங்கள் உதவ தயார்.</div>
+                        <div class="pain-cta">
+                            <button class="primary-btn">Get Free Quote</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>
+                    <span class="tamil">உங்கள் வீட்டிற்கு</span> Solar Power<br>
+                    Save ₹5,000+ Every Month!
+                </h1>
+                <p>
+                    கடலூர் #1 Solar Installation Company<br>
+                    Zero Upfront Cost | 25 Year Warranty | Government Subsidy Available
+                </p>
+                <div class="hero-cta">
+                    <button class="primary-btn">🎁 Get FREE Quote</button>
+                    <a href="https://wa.me/916380759287" class="secondary-btn" style="text-decoration: none; display: inline-block;">📱 WhatsApp Us</a>
+                </div>
+                <div class="trust-badges">
+                    <div class="badge">✓ 100+ Happy Customers</div>
+                    <div class="badge">✓ ISO Certified</div>
+                    <div class="badge">✓ Tamil Nadu Approved</div>
+                </div>
+            </div>
+        </section>
+            </div>
+        </section>
+
+        <div class="annotation">
+            📱 <strong>Mobile-First Design:</strong> Hero section optimized for quick load, clear CTA buttons, bilingual messaging, and trust indicators above the fold.
+        </div>
+
+        <!-- Benefits Section -->
+        <section class="benefits" id="benefits">
+            <h2 class="section-title">Why Choose Solar? | ஏன் சோலார்?</h2>
+            <p class="section-subtitle">Save Money, Save Environment, Save Future</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Save ₹60,000/Year</h3>
+                    <p>மாதம் ₹5,000 மின் கட்டணம் சேமிப்பு</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏆</div>
+                    <h3>Government Subsidy</h3>
+                    <p>40% வரை மானியம் கிடைக்கும்</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>No Power Cuts</h3>
+                    <p>24/7 மின்சாரம் உத்தரவாதம்</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌍</div>
+                    <h3>Eco-Friendly</h3>
+                    <p>சுத்தமான சுற்றுச்சூழல்</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📈</div>
+                    <h3>Increase Property Value</h3>
+                    <p>வீட்டின் மதிப்பு அதிகரிக்கும்</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>25 Year Warranty</h3>
+                    <p>நீண்ட கால உத்தரவாதம்</p>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Calculator Section -->
+        <section class="calculator" id="calculator">
+            <div class="calculator-content">
+                <h2>💡 Calculate Your Savings | உங்கள் சேமிப்பு கணக்கிடுங்கள்</h2>
+                
+                <div class="form-group">
+                    <label>Monthly Electricity Bill (மாத மின் கட்டணம்)</label>
+                    <input type="number" id="billAmount" placeholder="₹ Enter amount" value="5000">
+                </div>
+
+                <div class="form-group">
+                    <label>Property Type (வகை)</label>
+                    <select id="propertyType">
+                        <option>Home (வீடு)</option>
+                        <option>Apartment (குடியிருப்பு)</option>
+                        <option>Shop (கடை)</option>
+                        <option>Factory (தொழிற்சாலை)</option>
+                        <option>Commercial Building</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>City in Tamil Nadu</label>
+                    <select id="city">
+                        <option>Cuddalore</option>
+                        <option>Chidambaram</option>
+                        <option>Pondicherry</option>
+                        <option>Other Tamil Nadu</option>
+                    </select>
+                </div>
+
+                <button class="primary-btn" style="width: 100%;" onclick="calculate()">Calculate Savings</button>
+
+                <div class="result-box" id="results" style="display: none;">
+                    <h3 id="savingsAmount">₹60,000/year</h3>
+                    <p>Annual Savings | வருடாந்திர சேமிப்பு</p>
+                    <p style="margin-top: 1rem;">Recommended System: <strong id="systemSize">3 kW</strong></p>
+                    <button class="secondary-btn" style="margin-top: 1rem; width: 100%;">Get Detailed Quote</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Details Popup Modal -->
+        <div class="modal-overlay" id="customerModal">
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeModal()">×</button>
+                <div class="modal-header">
+                    <div class="modal-icon">🎉</div>
+                    <h3>Great! Let's Get Your Quote</h3>
+                    <p>உங்கள் தகவல்களை பகிருங்கள் | Share your details</p>
+                </div>
+                <form class="modal-form" onsubmit="submitForm(event)">
+                    <div class="modal-input-group">
+                        <label for="customerName">Your Name (உங்கள் பெயர்) *</label>
+                        <input 
+                            type="text" 
+                            id="customerName" 
+                            placeholder="Enter your name" 
+                            required
+                            minlength="2"
+                        >
+                        <span class="error-message" id="nameError">தயவுசெய்து சரியான பெயரை உள்ளிடவும்</span>
+                    </div>
+                    <div class="modal-input-group">
+                        <label for="customerMobile">Mobile Number (மொபைல் எண்) *</label>
+                        <input 
+                            type="tel" 
+                            id="customerMobile" 
+                            placeholder="10 digit number (eg: 9876543210)" 
+                            maxlength="10"
+                            required
+                            oninput="validateMobile(this)"
+                        >
+                        <span class="error-message" id="mobileError">10 இலக்க மொபைல் எண்ணை உள்ளிடவும்</span>
+                    </div>
+                    <button type="submit" class="modal-submit-btn">
+                        📞 Get My FREE Quote
+                    </button>
+                    <p class="modal-privacy">
+                        🔒 உங்கள் தகவல்கள் பாதுகாப்பாக வைக்கப்படும் | Your information is 100% secure
+                    </p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Success Popup Modal -->
+        <div class="success-modal-overlay" id="successModal">
+            <div class="success-modal-content">
+                <div class="success-icon-container"></div>
+                <h2>Successfully Submitted! 🎉</h2>
+                <p class="tamil-text">வெற்றிகரமாக சமர்ப்பிக்கப்பட்டது!</p>
+                
+                <div class="success-details">
+                    <div class="success-detail-item">
+                        <span class="icon">👤</span>
+                        <span>Name: <strong id="successName"></strong></span>
+                    </div>
+                    <div class="success-detail-item">
+                        <span class="icon">📱</span>
+                        <span>Mobile: <strong id="successMobile"></strong></span>
+                    </div>
+                    <div class="success-detail-item">
+                        <span class="icon">💰</span>
+                        <span>Estimated Savings: <strong id="successSavings"></strong></span>
+                    </div>
+                </div>
+
+                <p class="success-message">
+                    நாங்கள் விரைவில் உங்களை தொடர்பு கொள்வோம்!<br>
+                    <strong>Our team will contact you within 24 hours</strong>
+                </p>
+
+                <div class="success-actions">
+                    <button class="whatsapp-btn" onclick="openWhatsApp()">
+                        💬 Chat on WhatsApp Now
+                    </button>
+                    <button class="close-success-btn" onclick="closeSuccessModal()">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="annotation">
+            🧮 <strong>Calculator Widget:</strong> Interactive tool to engage users, collect lead data, and show personalized ROI. Real-time calculation builds trust.
+        </div>
+
+        <!-- Process Section -->
+        <section class="process" id="process">
+            <h2 class="section-title">Simple 4-Step Process | எளிய செயல்முறை</h2>
+            <p class="section-subtitle">From Inquiry to Installation in 15 Days</p>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Free Site Visit</h3>
+                    <p>இலவச ஆய்வு</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Custom Design</h3>
+                    <p>தனிப்பயன் வடிவமைப்பு</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Installation</h3>
+                    <p>நிறுவுதல்</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Start Saving!</h3>
+                    <p>சேமிக்க துவங்குங்கள்!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials" id="testimonials">
+            <h2 class="section-title">Customer Reviews | வாடிக்கையாளர் கருத்துக்கள்</h2>
+            <p class="section-subtitle">100+ Happy Customers Across Tamil Nadu</p>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "மாதம் ₹6000 மின் கட்டணம் இப்போது ₹500 மட்டும்! Very professional service and quick installation."
+                    </div>
+                    <div class="testimonial-author">Rajesh Kumar</div>
+                    <div class="testimonial-location">Cuddalore | Home Owner</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "மிகவும் நல்ல ROI! My electricity bill reduced by 85%. ETECH team was very helpful."
+                    </div>
+                    <div class="testimonial-author">Priya Sundar</div>
+                    <div class="testimonial-location">Chidambaram | Home Owner</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "No more power cuts! என் வீட்டில் 24/7 மின்சாரம். Installation took only 3 days. Highly recommend!"
+                    </div>
+                    <div class="testimonial-author">Venkatesh Raman</div>
+                    <div class="testimonial-location">Pondicherry | Home Owner</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="annotation">
+            ⭐ <strong>Social Proof:</strong> Local testimonials with bilingual quotes, specific savings, and diverse customer types build credibility.
+        </div>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <h2 class="section-title">Frequently Asked Questions | அடிக்கடி கேட்கப்படும் கேள்விகள்</h2>
+            <p class="section-subtitle">Get all your solar doubts cleared</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(0)">
+                        <span>சோலார் பேனல் எவ்வளவு நாள் வேலை செய்யும்? (How long do solar panels last?)</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer" id="faq-0">
+                        <p>Solar panels typically last 25-30 years with minimal maintenance. நமது panels-க்கு 25 வருட warranty உண்டு. Performance guarantee also included.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(1)">
+                        <span>மழை நாட்களில் மின்சாரம் கிடைக்குமா? (Will I get power on rainy days?)</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer" id="faq-1">
+                        <p>Yes! மழை நாட்களிலும் panels வேலை செய்யும், but with reduced output. We provide battery backup system or grid connection to ensure 24/7 power supply.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(2)">
+                        <span>அரசாங்க மானியம் கிடைக்குமா? (Is government subsidy available?)</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer" id="faq-2">
+                        <p>ஆம்! Tamil Nadu government provides up to 40% subsidy for residential solar installations. நாங்கள் உங்களுக்கு subsidy application process-ல் முழு உதவி செய்வோம்.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(3)">
+                        <span>முதலில் எவ்வளவு செலவாகும்? (What is the initial cost?)</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer" id="faq-3">
+                        <p>Cost depends on your power requirement. A typical 3kW home system costs ₹1.5-2 lakhs (after subsidy). Zero upfront payment EMI options available. உங்கள் மின் கட்டண சேமிப்பிலேயே EMI கட்டலாம்!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(4)">
+                        <span>நிறுவல் எவ்வளவு நாள் ஆகும்? (How long does installation take?)</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer" id="faq-4">
+                        <p>Installation takes only 2-3 days for residential setups. Complete process from site visit to activation: 15 days. விரைவான மற்றும் தொழில்முறை service!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(5)">
+                        <span>பராமரிப்பு செலவு அதிகமா? (Is maintenance expensive?)</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer" id="faq-5">
+                        <p>No! Solar panels require very little maintenance. வருடத்திற்கு 2-3 முறை cleaning மட்டும் போதும். We offer FREE maintenance for 1st year. After that, minimal annual cost of ₹2,000-3,000.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(6)">
+                        <span>என் வீட்டிற்கு சோலார் ஏற்றதா? (Is solar suitable for my home?)</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer" id="faq-6">
+                        <p>If you have roof space (100-150 sq ft for 1kW) and good sunlight exposure, solar is perfect! நாங்கள் FREE site survey செய்து best solution தருவோம். Apartments, independent houses, shops எல்லாமே suitable!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(7)">
+                        <span>மின்சார board approval தேவையா? (Do I need electricity board approval?)</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer" id="faq-7">
+                        <p>Yes, TNEB net metering approval required. But don't worry! நாங்கள் எல்லா paperwork மற்றும் approvals-ஐயும் கவனித்துக் கொள்வோம். You just relax!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="final-cta">
+            <h2>Ready to Go Solar? | தயாரா?</h2>
+            <p>
+                Limited Time Offer: Get Extra 10% Discount + FREE Maintenance for 1 Year<br>
+                <strong>Offer valid till March 2026</strong>
+            </p>
+            <div class="contact-options">
+                <a href="tel:+916380759287" class="contact-btn">
+                    📞 Call: +91 63807 59287
+                </a>
+                <a href="https://wa.me/916380759287" class="contact-btn">
+                    💬 WhatsApp Now
+                </a>
+                <a href="#" class="contact-btn">
+                    📧 Get FREE Quote
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div>
+                    <h4>About Us</h4>
+                    <a href="#">Our Story</a>
+                    <a href="#">Team</a>
+                    <a href="#">Certifications</a>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <a href="#">Residential Solar</a>
+                    <a href="#">Commercial Solar</a>
+                    <a href="#">Maintenance & Support</a>
+                </div>
+                <div>
+                    <h4>Support</h4>
+                    <a href="#">FAQs</a>
+                    <a href="#">Warranty</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div>
+                    <h4>Service Areas</h4>
+                    <a href="#">Cuddalore</a>
+                    <a href="#">Chidambaram</a>
+                    <a href="#">Pondicherry</a>
+                    <a href="#">All Tamil Nadu</a>
+                </div>
+            </div>
+            <p style="margin-top: 2rem; text-align: center; color: #cbd5e0;">
+                © 2026 ETECH SOLUTIONS | Tamil Nadu's Trusted Solar Partner
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Global variables to store form data
+        let currentFormData = {};
+
+        function validateMobile(input) {
+            // Only allow numbers
+            input.value = input.value.replace(/[^0-9]/g, '');
+            
+            const mobileError = document.getElementById('mobileError');
+            const mobileInput = document.getElementById('customerMobile');
+            
+            // Check if 10 digits
+            if (input.value.length > 0 && input.value.length < 10) {
+                mobileInput.classList.add('error');
+                mobileError.classList.add('show');
+            } else {
+                mobileInput.classList.remove('error');
+                mobileError.classList.remove('show');
+            }
+        }
+
+        function calculate() {
+            const bill = document.getElementById('billAmount').value;
+            
+            // Validation
+            if (!bill || bill <= 0) {
+                alert('தயவுசெய்து மின் கட்டணத்தை உள்ளிடவும் | Please enter your electricity bill');
+                return;
+            }
+            
+            const savings = bill * 12 * 0.8; // 80% savings assumption
+            const systemSize = Math.ceil(bill / 1500); // Rough calculation
+            
+            document.getElementById('savingsAmount').textContent = '₹' + savings.toLocaleString('en-IN') + '/year';
+            document.getElementById('systemSize').textContent = systemSize + ' kW';
+            document.getElementById('results').style.display = 'block';
+            
+            // Show customer details popup
+            setTimeout(() => {
+                showModal();
+            }, 500);
+        }
+
+        function showModal() {
+            document.getElementById('customerModal').classList.add('show');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeModal() {
+            document.getElementById('customerModal').classList.remove('show');
+            document.body.style.overflow = 'auto'; // Restore scrolling
+            
+            // Clear form
+            document.getElementById('customerName').value = '';
+            document.getElementById('customerMobile').value = '';
+            document.getElementById('customerName').classList.remove('error');
+            document.getElementById('customerMobile').classList.remove('error');
+            document.getElementById('nameError').classList.remove('show');
+            document.getElementById('mobileError').classList.remove('show');
+        }
+
+        function showSuccessModal(name, mobile, savings) {
+            // Store data for WhatsApp
+            currentFormData = {
+                name: name,
+                mobile: mobile,
+                bill: document.getElementById('billAmount').value,
+                propertyType: document.getElementById('propertyType').value,
+                city: document.getElementById('city').value
+            };
+
+            // Update success modal with data
+            document.getElementById('successName').textContent = name;
+            document.getElementById('successMobile').textContent = mobile;
+            document.getElementById('successSavings').textContent = '₹' + savings + '/year';
+            
+            // Show success modal
+            document.getElementById('successModal').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeSuccessModal() {
+            document.getElementById('successModal').classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+
+        function openWhatsApp() {
+            const message = `Hi ETECH! I'm ${currentFormData.name}. I want a solar quote for my ${currentFormData.propertyType} in ${currentFormData.city}. My monthly bill is ₹${currentFormData.bill}.`;
+            const whatsappUrl = `https://wa.me/916380759287?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+            closeSuccessModal();
+        }
+
+        function submitForm(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('customerName').value.trim();
+            const mobile = document.getElementById('customerMobile').value.trim();
+            const bill = document.getElementById('billAmount').value;
+            const propertyType = document.getElementById('propertyType').value;
+            const city = document.getElementById('city').value;
+            
+            const nameInput = document.getElementById('customerName');
+            const mobileInput = document.getElementById('customerMobile');
+            const nameError = document.getElementById('nameError');
+            const mobileError = document.getElementById('mobileError');
+            const submitBtn = event.target.querySelector('.modal-submit-btn');
+            
+            let isValid = true;
+            
+            // Validate name
+            if (name.length < 2) {
+                nameInput.classList.add('error');
+                nameError.classList.add('show');
+                isValid = false;
+            } else {
+                nameInput.classList.remove('error');
+                nameError.classList.remove('show');
+            }
+            
+            // Validate mobile (must be exactly 10 digits)
+            if (mobile.length !== 10 || !/^[0-9]{10}$/.test(mobile)) {
+                mobileInput.classList.add('error');
+                mobileError.classList.add('show');
+                mobileError.textContent = '10 இலக்க மொபைல் எண்ணை உள்ளிடவும் | Enter 10 digit mobile number';
+                isValid = false;
+            } else {
+                mobileInput.classList.remove('error');
+                mobileError.classList.remove('show');
+            }
+            
+            if (!isValid) {
+                return;
+            }
+            
+            // Show loading state
+            submitBtn.textContent = '⏳ Submitting...';
+            submitBtn.disabled = true;
+            
+            // Prepare data for Google Sheets
+            const estimatedSavings = (bill * 12 * 0.8).toFixed(0);
+            const formData = {
+                timestamp: new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
+                name: name,
+                mobile: mobile,
+                monthlyBill: bill,
+                propertyType: propertyType,
+                city: city,
+                estimatedSavings: estimatedSavings,
+                systemSize: Math.ceil(bill / 1500) + ' kW'
+            };
+            
+            // Google Apps Script Web App URL - REPLACE THIS WITH YOUR ACTUAL URL
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwu8MULEewfVLcDVCZQvWeyRMJQ4H2VbKvaVvLVDljnbRs2x5zb5ChiKaloX4EHcynv/exec';
+            
+            // Send data to Google Sheets
+            fetch(scriptURL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => {
+                console.log('Data sent to Google Sheets:', formData);
+                
+                // Reset button
+                submitBtn.textContent = '📞 Get My FREE Quote';
+                submitBtn.disabled = false;
+                
+                // Close form modal
+                closeModal();
+                
+                // Show beautiful success popup
+                showSuccessModal(name, mobile, estimatedSavings);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                
+                // Reset button
+                submitBtn.textContent = '📞 Get My FREE Quote';
+                submitBtn.disabled = false;
+                
+                // Still show success modal (data might have been saved)
+                closeModal();
+                showSuccessModal(name, mobile, estimatedSavings);
+            });
+        }
+
+        function toggleFaq(index) {
+            const faqItem = document.getElementById('faq-' + index).parentElement;
+            const allFaqs = document.querySelectorAll('.faq-item');
+            
+            // Close other FAQs
+            allFaqs.forEach((item, i) => {
+                if (i !== index) {
+                    item.classList.remove('active');
+                }
+            });
+            
+            // Toggle current FAQ
+            faqItem.classList.toggle('active');
+        }
+
+        // Close modal when clicking outside
+        document.addEventListener('click', function(event) {
+            const modal = document.getElementById('customerModal');
+            const successModal = document.getElementById('successModal');
+            
+            if (event.target === modal) {
+                closeModal();
+            }
+            if (event.target === successModal) {
+                closeSuccessModal();
+            }
+        });
+        
+        // Prevent modal close when clicking inside modal content
+        document.addEventListener('DOMContentLoaded', function() {
+            const modalContents = document.querySelectorAll('.modal-content, .success-modal-content');
+            modalContents.forEach(content => {
+                content.addEventListener('click', function(event) {
+                    event.stopPropagation();
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>
